@@ -1,0 +1,15 @@
+### Variáveis de ambiente
+@base_url = http://localhost:3333
+@route = settings
+
+
+### POST Settings
+
+###  add username admin
+POST {{base_url}}/{{route}}
+Content-Type: application/json
+
+{
+    "username": "admin"
+    "chat": true,
+}
