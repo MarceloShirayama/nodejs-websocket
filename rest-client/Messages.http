@@ -1,8 +1,8 @@
 ### Variáveis de ambiente
 @base_url = http://localhost:3333
 @route = messages
-@user_id_marcelo = 795161b5-a4a1-418d-891e-48b33f0b2653
 @admin_id = dc75e7d5-1622-47a1-bae2-f81ad5bb3cdb
+@user_id_marcelo = 795161b5-a4a1-418d-891e-48b33f0b2653
 
 
 ### POST Message user
@@ -26,5 +26,5 @@ Content-Type: application/json
   "admin_id": "{{admin_id}}"
 }
 
-### GET list messages by user
+### GET list messages by user marcelo
 GET  {{base_url}}/{{route}}/{{user_id_marcelo}}
