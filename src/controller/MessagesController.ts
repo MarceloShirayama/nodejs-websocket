@@ -9,6 +9,6 @@ export class MessagesController {
 
     const message = await messagesServices.create({ admin_id, text, user_id });
 
-    return message;
+    return response.json(message);
   }
 }
