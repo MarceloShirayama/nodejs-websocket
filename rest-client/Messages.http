@@ -1,0 +1,28 @@
+### Variáveis de ambiente
+@base_url = http://localhost:3333
+@route = messages
+
+
+### POST Message user
+@user_id = 795161b5-a4a1-418d-891e-48b33f0b2653
+###  add message 
+POST {{base_url}}/{{route}}
+Content-Type: application/json
+
+{
+  "user_id": "{{user_id}}",
+  "text": "Olá eu preciso de ajuda!"
+}
+
+### POST Message admin to user
+@user_id = 795161b5-a4a1-418d-891e-48b33f0b2653
+@admin_id = dc75e7d5-1622-47a1-bae2-f81ad5bb3cdb
+###  add message 
+POST {{base_url}}/{{route}}
+Content-Type: application/json
+
+{
+  "user_id": "{{user_id}}",
+  "text": "Olá, boa tarde! Como posso ajudar?",
+  "admin_id": "{{admin_id}}"
+}
