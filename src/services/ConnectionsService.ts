@@ -26,4 +26,10 @@ export class ConnectionsService {
 
     return connection;
   };
+
+  async findBysUserId(user_id: string) {
+    const connection = await this.connectionsRepostitory.findOne({ user_id });
+
+    return connection;
+  };
 }
